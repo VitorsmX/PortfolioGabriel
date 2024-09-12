@@ -60,7 +60,7 @@ export default function Home() {
 
       <div className={styles.skills_section} id="skills">
         <h2>Skills</h2>
-        <ul className={styles.skillImg}>
+        <ul className={styles.skills_container}>
           <li>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
           </li>
@@ -111,7 +111,7 @@ export default function Home() {
       <div className={styles.projects_section} id="projects">
         <h2>Projects</h2>
 
-        <ul>
+        <ul className={styles.projects_list}>
 
           <li>
 
@@ -124,8 +124,9 @@ export default function Home() {
             <div>
               <Image
                 src="/images/projects/mangaReader.png"
-                width={80}
-                height={40}
+                width={300}
+                height={180}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 alt="Background"
               />
 
