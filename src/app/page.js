@@ -45,7 +45,7 @@ export default function Home() {
       </header>
 
       <div className={styles.main_section}>
-        <h1>Lucas Gabriel <br/>Web Developer</h1>
+        <h1>Lucas Gabriel <br />Web Developer</h1>
       </div>
 
       <div className={styles.about_section} id="about">
@@ -119,13 +119,14 @@ export default function Home() {
               </div>
             </header>
 
-            <div>
+            <div className={styles.project_details}>
               <Image
                 src="/images/projects/mangaReader.png"
                 width={300}
                 height={180}
                 layout="responsive"
                 alt="Background"
+                className={styles.project_img}
               />
 
               <ul className={styles.project_skillsContainer}>
@@ -146,20 +147,21 @@ export default function Home() {
           <li className={styles.project_container}>
 
             <header>
-              <h3>Manga Reader</h3>
+              <h3>Anime DataBase</h3>
               <div className={styles.project_buttons}>
-                <a href="https://lucasgabriellanarosa.github.io/MangaPneu/" target="_blank">Live Project</a>
-                <a href="https://github.com/lucasgabriellanarosa/MangaPneu" target="_blank">Repository</a>
+                <a href="https://www.youtube.com/watch?v=1SHbxfKcEhM" target="_blank">Live Project</a>
+                <a href="https://github.com/lucasgabriellanarosa/CS50W-FinalProject" target="_blank">Repository</a>
               </div>
             </header>
 
-            <div>
+            <div className={styles.project_details}>
               <Image
-                src="/images/projects/mangaReader.png"
+                src="/images/projects/animeDB.png"
                 width={300}
                 height={180}
                 layout="responsive"
                 alt="Background"
+                className={styles.project_img}
               />
 
               <ul className={styles.project_skillsContainer}>
@@ -170,7 +172,13 @@ export default function Home() {
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
                 </li>
                 <li>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                </li>
+                <li>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+                </li>
+                <li>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
                 </li>
               </ul>
             </div>
@@ -180,20 +188,21 @@ export default function Home() {
           <li className={styles.project_container}>
 
             <header>
-              <h3>Manga Reader</h3>
+              <h3>Network</h3>
               <div className={styles.project_buttons}>
-                <a href="https://lucasgabriellanarosa.github.io/MangaPneu/" target="_blank">Live Project</a>
-                <a href="https://github.com/lucasgabriellanarosa/MangaPneu" target="_blank">Repository</a>
+                <a href="https://www.youtube.com/watch?v=DyQXtx3TLVk&t" target="_blank">Live Project</a>
+                <a href="https://github.com/lucasgabriellanarosa/CS50W-Project4" target="_blank">Repository</a>
               </div>
             </header>
 
-            <div>
+            <div className={styles.project_details}>
               <Image
-                src="/images/projects/mangaReader.png"
+                src="/images/projects/network.png"
                 width={300}
                 height={180}
                 layout="responsive"
                 alt="Background"
+                className={styles.project_img}
               />
 
               <ul className={styles.project_skillsContainer}>
@@ -204,7 +213,51 @@ export default function Home() {
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
                 </li>
                 <li>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                </li>
+                <li>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+                </li>
+                <li>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
+                </li>
+              </ul>
+            </div>
+
+          </li>
+
+          <li className={styles.project_container}>
+
+            <header>
+              <h3>Ecommerce</h3>
+              <div className={styles.project_buttons}>
+                <a href="https://www.youtube.com/watch?v=k23tNIKMBNY" target="_blank">Live Project</a>
+                <a href="https://github.com/lucasgabriellanarosa/CS50W-Project2" target="_blank">Repository</a>
+              </div>
+            </header>
+
+            <div className={styles.project_details}>
+              <Image
+                src="/images/projects/ecommerce.png"
+                width={300}
+                height={180}
+                layout="responsive"
+                alt="Background"
+                className={styles.project_img}
+              />
+
+              <ul className={styles.project_skillsContainer}>
+                <li>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                </li>
+                <li>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                </li>
+                <li>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+                </li>
+                <li>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
                 </li>
               </ul>
             </div>

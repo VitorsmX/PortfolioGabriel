@@ -5,6 +5,14 @@
     font-family: var(--font-imprima);
 }
 
+body{
+    background-color: #D9CAAD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 li{
     list-style: none;
 }

@@ -14,10 +14,10 @@
 }
 
 .main_container{
-    background-color: #D9CAAD;
     display: flex;
     align-items: center;
     flex-direction: column;
+    max-width: 1024px;
 }
 
 .header_container{
@@ -81,8 +81,12 @@
     row-gap: .8rem;
 }
 
+.skills_container li{
+    max-width: 80px;
+}
+
 .projects_section{
-    width: 100%;
+    width: 100vw;
     background-color: #EEF2CE;
     padding: 1rem 2rem;
     display: flex;
@@ -122,6 +126,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    max-width: 360px;
 }
 
 .project_buttons a{
@@ -145,10 +150,22 @@
     width: 3.5rem;
 }
 
+.project_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.project_img{
+    max-width: 960px;
+}
+
 
 .contacts_section{
     background-color: #7e7667;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     padding: 1rem 2rem;
@@ -174,11 +191,37 @@
 }
 
 @media screen and (min-width: 768px) {
+    .skills_section{
+        justify-content: center;
+        align-items: center;
+    }
+    .skills_section h2{
+        align-self: flex-start;
+    }
     .skills_container{
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 5rem;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 3rem;
     }
     .skills_container li{
         width: 5rem;
+    }
+    .contacts_section ul{
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .skills_container{
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .skills_container{
+        display: flex;
+        gap: 1rem;
     }
 }
