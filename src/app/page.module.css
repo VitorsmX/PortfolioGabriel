@@ -1,5 +1,5 @@
 .download_button{
-    background-color: #2C2C2C;
+    background-color: #D93644;
     color: white;
     display: flex;
     justify-content: center;
@@ -10,36 +10,25 @@
     border-radius: 10px;
     text-decoration: none;
     gap: .5rem;
+    box-shadow: 2px 2px 2px 3px #a32f39;
 }
 
 .main_container{
-    background-color: #D7D6D8;
+    background-color: #D9CAAD;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 .header_container{
-    background-color: #504F50;
+    display: none;
+    /* background-color: #504F50;
     position: fixed;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: .5rem 0px;
-}
-
-.header_container ul{
-    display: none;
-}
-
-.header_container button{
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: .5rem 0px; */
 }
 
 .main_section{
@@ -52,18 +41,24 @@
 .main_section h1{
     font-family: var(--font-fingerPaint);
     font-size: 2.75rem;
+    color: #73171F;
 }
 
 .about_section{
-    background-color: #B5B4B6;
+    background-color: #EEF2CE;
     width: 80%;
     padding: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
+    box-shadow: 0px 0px 10px rgb(46, 46, 46);
 }
 
+.about_section h2{
+    font-size: 2rem;
+    color: #73171F;
+}
 
 .skills_section{
     width: 100%;
@@ -75,6 +70,7 @@
 }
 
 .skills_section h2{
+    color: #73171F;
     font-size: 3rem;
 }
 
@@ -87,7 +83,7 @@
 
 .projects_section{
     width: 100%;
-    background-color: #939294;
+    background-color: #EEF2CE;
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
@@ -96,8 +92,8 @@
 
 .projects_section h2{
     font-size: 3rem;
+    color: #73171F;
 }
-
 
 .projects_list{
     display: flex;
@@ -118,6 +114,7 @@
 }
 
 .project_container h3{
+    color: #d62938;
     font-size: 2rem;
 }
 
@@ -130,7 +127,7 @@
 .project_buttons a{
     font-size: 1rem;
     text-decoration: none;
-    background-color: #65558F;
+    background-color: #d65c66;
     color: white;
     padding: 1rem 1.5rem;
     border-radius: 30px;
@@ -150,16 +147,12 @@
 
 
 .contacts_section{
-    background-color: #504F50;
+    background-color: #7e7667;
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 1rem 2rem;
     gap: .5rem;
-}
-
-.contacts_section h2{
-    font-size: 1.75rem;
 }
 
 .contacts_section ul{

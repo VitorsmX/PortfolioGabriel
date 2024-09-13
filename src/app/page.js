@@ -43,14 +43,10 @@ export default function Home() {
 
         </ul>
 
-        <button>
-          <MdMenu />
-        </button>
-
       </header>
 
       <div className={styles.main_section}>
-        <h1>Web Developer</h1>
+        <h1>Lucas Gabriel <br/>Web Developer</h1>
       </div>
 
       <div className={styles.about_section} id="about">
@@ -220,7 +216,6 @@ export default function Home() {
       </div>
 
       <div className={styles.contacts_section} id="contacts">
-        <h2>Contacts</h2>
         <ul>
 
           <li>
