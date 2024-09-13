@@ -4,6 +4,7 @@ import { MdMenu } from "react-icons/md";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
+import { FiDownload } from "react-icons/fi";
 
 
 export default function Home() {
@@ -55,7 +56,7 @@ export default function Home() {
       <div className={styles.about_section} id="about">
         <h2>About Me</h2>
         <p>I'm a web developer looking for my first job oportunity. Both front-end and back-end are fields I'm familiar with. I've been studying web development since 2021 and I've completed some courses during this time. It all started with a Javascript brazilian course from Gustavo Guanabara with his project called Curso em Vídeo, one of the most famous Youtube channels in Brazil. Click here to see his channel. After that, I started both The Odin Project and Harvard's CS50's Web Programming with Python and Javascript. CS50W was my main study and the base of all that I know. There I really learned every technology I'm using today: CSS, Javascript and Django. But, above all that, they really taught me how to code. How to solve a problem searching for a solution by my own, getting erros and trying to fix it. Currently I'm on the "Java and Spring Boot" bootcamp from the DIO (Digital Innovation One). My main technology is React, that I learned on Youtube without courses or bootcamps.</p>
-        <a href="./Lucas Gabriel de Lana Rosa - Front End.pdf" download="Lucas Gabriel de Lana Rosa - Front End.pdf" className={styles.download_button}>Resume</a>
+        <a href="./Lucas Gabriel de Lana Rosa - Front End.pdf" download="Lucas Gabriel de Lana Rosa - Front End.pdf" className={styles.download_button}><FiDownload /> Resume</a>
       </div>
 
       <div className={styles.skills_section} id="skills">
@@ -113,24 +114,26 @@ export default function Home() {
 
         <ul className={styles.projects_list}>
 
-          <li>
+          <li className={styles.project_container}>
 
-            <div>
+            <header>
               <h3>Manga Reader</h3>
-              <a href="https://lucasgabriellanarosa.github.io/MangaPneu/" target="_blank">Live Project</a>
-              <a href="https://github.com/lucasgabriellanarosa/MangaPneu" target="_blank">Repository</a>
-            </div>
+              <div className={styles.project_buttons}>
+                <a href="https://lucasgabriellanarosa.github.io/MangaPneu/" target="_blank">Live Project</a>
+                <a href="https://github.com/lucasgabriellanarosa/MangaPneu" target="_blank">Repository</a>
+              </div>
+            </header>
 
             <div>
               <Image
                 src="/images/projects/mangaReader.png"
                 width={300}
                 height={180}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                layout="responsive"
                 alt="Background"
               />
 
-              <ul className={styles.skillImg}>
+              <ul className={styles.project_skillsContainer}>
                 <li>
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
                 </li>
@@ -145,23 +148,26 @@ export default function Home() {
 
           </li>
 
-          <li>
+          <li className={styles.project_container}>
 
-            <div>
-              <h3>Anime Data Base</h3>
-              <a href="https://www.youtube.com/watch?v=1SHbxfKcEhM&t" target="_blank">Live Project</a>
-              <a href="https://github.com/lucasgabriellanarosa/CS50W-FinalProject" target="_blank">Repository</a>
-            </div>
+            <header>
+              <h3>Manga Reader</h3>
+              <div className={styles.project_buttons}>
+                <a href="https://lucasgabriellanarosa.github.io/MangaPneu/" target="_blank">Live Project</a>
+                <a href="https://github.com/lucasgabriellanarosa/MangaPneu" target="_blank">Repository</a>
+              </div>
+            </header>
 
             <div>
               <Image
-                src="/images/projects/animeDB.png"
-                width={80}
-                height={40}
+                src="/images/projects/mangaReader.png"
+                width={300}
+                height={180}
+                layout="responsive"
                 alt="Background"
               />
 
-              <ul className={styles.skillImg}>
+              <ul className={styles.project_skillsContainer}>
                 <li>
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
                 </li>
@@ -169,36 +175,33 @@ export default function Home() {
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
                 </li>
                 <li>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                </li>
-                <li>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
-                </li>
-                <li>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
                 </li>
               </ul>
             </div>
 
           </li>
 
-          <li>
+          <li className={styles.project_container}>
 
-            <div>
-              <h3>Network</h3>
-              <a href="https://www.youtube.com/watch?v=DyQXtx3TLVk" target="_blank">Live Project</a>
-              <a href="https://github.com/lucasgabriellanarosa/CS50W-Project4" target="_blank">Repository</a>
-            </div>
+            <header>
+              <h3>Manga Reader</h3>
+              <div className={styles.project_buttons}>
+                <a href="https://lucasgabriellanarosa.github.io/MangaPneu/" target="_blank">Live Project</a>
+                <a href="https://github.com/lucasgabriellanarosa/MangaPneu" target="_blank">Repository</a>
+              </div>
+            </header>
 
             <div>
               <Image
-                src="/images/projects/network.png"
-                width={80}
-                height={40}
+                src="/images/projects/mangaReader.png"
+                width={300}
+                height={180}
+                layout="responsive"
                 alt="Background"
               />
 
-              <ul className={styles.skillImg}>
+              <ul className={styles.project_skillsContainer}>
                 <li>
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
                 </li>
@@ -206,13 +209,7 @@ export default function Home() {
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
                 </li>
                 <li>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                </li>
-                <li>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
-                </li>
-                <li>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
                 </li>
               </ul>
             </div>
